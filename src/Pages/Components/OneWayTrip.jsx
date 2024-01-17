@@ -10,8 +10,8 @@ const OneWayTrip = () => {
     setActive(option);
   };
   return (
-    <div className="w-full h-full 2xl:flex 2xl:flex-col gap-5">
-      <div className="2xl:flex 2xl:justify-between 2xl:items-center text-[#EB1933]">
+    <div className="w-full h-full flex flex-col gap-5 pt-10">
+      <div className="flex justify-between items-center text-[#EB1933]">
         <div className="relative group">
           <FaCaretLeft size={40} className="cursor-pointer" />
           <div className="hidden group-hover:flex flex-col items-center absolute left-1/2 top-[10%] translate-x-[-50%] translate-y-[50%] z-[3]">
@@ -22,7 +22,7 @@ const OneWayTrip = () => {
           </div>
         </div>
 
-        <h1 className="text-[32px] font-bold text-[#212529]">
+        <h1 className="md:text-[30px] text-2xl font-bold text-[#212529]">
           Flights from Dhaka to Chittagong
         </h1>
         <div className="relative group">
@@ -36,7 +36,7 @@ const OneWayTrip = () => {
         </div>
       </div>
 
-      <div className="2xl:flex 2xl:p-5 rounded-lg bg-white border 2xl:drop-shadow-lg">
+      <div className="flex p-5 rounded-lg bg-white border drop-shadow-lg">
         <div
           className={`flex-1 cursor-pointer p-3 ${
             active === "cheapest" ? "bg-[#F5F6FA]" : "bg-none"
@@ -62,7 +62,7 @@ const OneWayTrip = () => {
         </div>
       </div>
 
-      <div className="2xl:flex 2xl:flex-col 2xl:gap-5">
+      <div className="flex flex-col gap-5">
         {tripData.map((data, index) => (
           <Trip key={index} data={data} />
         ))}

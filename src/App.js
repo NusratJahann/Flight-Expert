@@ -3,7 +3,7 @@ import Router from "./Routes/Router";
 
 function App() {
   return (
-    <div className="container mx-auto 2xl:py-2">
+    <div className="container mx-auto lg:py-2">
       <Router />
     </div>
   );

@@ -4,10 +4,10 @@ import "../../../CSS/checkboxInput.css";
 const Others = () => {
   return (
     <>
-      <div className="2xl:py-5 border-b 2xl:px-6">
-        <div className="2xl:flex 2xl:flex-col 2xl:gap-5">
+      <div className="py-5 border-b px-6">
+        <div className="flex flex-col gap-5">
           <span className="text-[18px] font-[600]">Stops From Dhaka</span>
-          <label className="2xl:flex justify-between items-center mb-2">
+          <label className="flex justify-between items-center mb-2">
             <label className="custom-checkbox text-[#52556F] text-sm">
               <input
                 className="hidden"
@@ -22,8 +22,8 @@ const Others = () => {
         </div>
       </div>
 
-      <div className="2xl:py-5 border-b 2xl:px-6">
-        <div className="2xl:flex 2xl:flex-col 2xl:gap-5">
+      <div className="py-5 border-b px-6">
+        <div className="flex flex-col gap-5">
           <span className="text-[18px] font-[600]">
             Check in Baggage Allowance
           </span>
@@ -34,8 +34,8 @@ const Others = () => {
         </div>
       </div>
 
-      <div className="2xl:py-5 border-b 2xl:px-6">
-        <div className="2xl:flex 2xl:flex-col 2xl:gap-5">
+      <div className="py-5 border-b px-6">
+        <div className="flex flex-col gap-5">
           <span className="text-[18px] font-[600]">Refundable</span>
           <label className="custom-checkbox text-[#52556F] text-sm">
             <input
@@ -49,9 +49,9 @@ const Others = () => {
         </div>
       </div>
 
-      <div className="2xl:flex 2xl:px-6">
-        <div className="2xl:py-5 border-b">
-          <div className="2xl:flex 2xl:flex-col 2xl:gap-5">
+      <div className="flex px-6 border-b">
+        <div className="py-5">
+          <div className="flex flex-col gap-5">
             <span className="font-semibold">Departing from</span>
             <label className="custom-checkbox text-[#52556F] text-sm">
               <input className="hidden" type="checkbox" name="dac" id="dac" />
@@ -59,8 +59,8 @@ const Others = () => {
             </label>
           </div>
         </div>
-        <div className="2xl:py-5 border-b">
-          <div className="2xl:flex 2xl:flex-col 2xl:gap-5">
+        <div className="py-5 pl-[30%]">
+          <div className="flex flex-col gap-5">
             <span className="font-semibold">Arriving at</span>
             <label className="custom-checkbox text-[#52556F] text-sm">
               <input className="hidden" type="checkbox" name="cgp" id="cgp" />
@@ -70,11 +70,11 @@ const Others = () => {
         </div>
       </div>
 
-      <div className="2xl:py-5 border-b 2xl:px-6">
-        <div className="2xl:flex 2xl:flex-col 2xl:gap-5">
+      <div className="py-5 border-b px-6">
+        <div className="flex flex-col gap-5">
           <span className="text-[18px] font-[600]">Airlines</span>
           <label>
-            <label className="2xl:flex justify-between items-center mb-2">
+            <label className="flex justify-between items-center mb-2">
               <label className="custom-checkbox text-[#52556F] text-sm">
                 <input
                   className="hidden"
@@ -87,7 +87,7 @@ const Others = () => {
               </label>
               <span className="cursor-text">BDT 3,240</span>
             </label>
-            <label className="2xl:flex justify-between items-center mb-2">
+            <label className="flex justify-between items-center mb-2">
               <label className="custom-checkbox text-[#52556F] text-sm">
                 <input
                   className="hidden"
@@ -99,7 +99,7 @@ const Others = () => {
               </label>
               <span className="cursor-text">BDT 3,954</span>
             </label>
-            <label className="2xl:flex justify-between items-center mb-2">
+            <label className="flex justify-between items-center mb-2">
               <label className="custom-checkbox text-[#52556F] text-sm">
                 <input
                   className="hidden"
@@ -111,7 +111,7 @@ const Others = () => {
               </label>
               <span className="cursor-text">BDT 4,139</span>
             </label>
-            <label className="2xl:flex justify-between items-center">
+            <label className="flex justify-between items-center">
               <label className="custom-checkbox text-[#52556F] text-sm">
                 <input
                   className="hidden"
@@ -127,8 +127,8 @@ const Others = () => {
         </div>
       </div>
 
-      <div className="2xl:py-5 2xl:px-6">
-        <div className="2xl:flex 2xl:flex-col 2xl:gap-5">
+      <div className="py-5 px-6">
+        <div className="flex flex-col gap-5">
           <span className="text-[18px] font-[600]">
             Transit Time in (Dhaka - Chittagong)
           </span>

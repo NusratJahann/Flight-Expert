@@ -5,7 +5,7 @@ import Button from "../SmallComponents/Button/Button";
 
 const ChooseTrip = () => {
   const buttonClassNames =
-    "absolute left-1/2 bottom-0 2xl:px-6 2xl:py-3 bg-[#eb1933] rounded-md text-white font-bold translate-x-[-50%] translate-y-[50%]";
+    "absolute left-1/2 bottom-0 2xl:px-6 2xl:py-3 px-6 py-2 bg-[#eb1933] rounded-md text-white font-bold translate-x-[-50%] translate-y-[50%]";
   const [checkedOption, setCheckedOption] = useState("one_way");
   const [fareType, setFareType] = useState("regular_fares");
   const [tripDetails, setTripDetails] = useState({
@@ -38,9 +38,9 @@ const ChooseTrip = () => {
   };
   return (
     <section className="rounded-2xl 2xl:px-2 2xl:py-5 bg-white drop-shadow-lg relative h-full z-[1]">
-      <div className="2xl:py-3 2xl:px-4 w-full flex 2xl:flex-col justify-evenly items-start gap-4">
-        <div className="flex gap-5">
-          <label className="custom-radio-1 flex items-center text-[#7C8DB0] 2xl:text-[16px] 2xl:font-bold">
+      <div className="py-3 2xl:pb-0 pb-10 px-4 w-full flex-col 2xl:flex justify-evenly items-start gap-4">
+        <div className="flex flex-wrap lg:justify-start justify-center md:gap-5 gap-2 pb-4 lg:pb-0">
+          <label className="custom-radio-1 flex items-center text-[#7C8DB0] 2xl:text-[16px] text-sm 2xl:font-bold">
             <input
               type="radio"
               className="hidden"
@@ -51,7 +51,7 @@ const ChooseTrip = () => {
             />
             <span className="radio-indicator-1"></span>One Way
           </label>
-          <label className="custom-radio-1 flex items-center text-[#7C8DB0] 2xl:text-[16px] 2xl:font-bold">
+          <label className="custom-radio-1 flex items-center text-[#7C8DB0] 2xl:text-[16px] text-sm 2xl:font-bold">
             <input
               type="radio"
               className="hidden"
@@ -62,7 +62,7 @@ const ChooseTrip = () => {
             />
             <span className="radio-indicator-1"></span>Round Trip
           </label>
-          <label className="custom-radio-1 flex items-center text-[#7C8DB0] 2xl:text-[16px] 2xl:font-bold">
+          <label className="custom-radio-1 flex items-center text-[#7C8DB0] 2xl:text-[16px] text-sm 2xl:font-bold">
             <input
               type="radio"
               className="hidden"
@@ -77,7 +77,7 @@ const ChooseTrip = () => {
 
         <div className="flex flex-col 2xl:flex-row gap-2">
           <div className="flex items-center text-[#6C757D] relative">
-            <div className="border rounded-[10px] 2xl:pl-5 2xl:py-2 2xl:w-[17.6rem] flex flex-col items-start 2xl:gap-.5 cursor-pointer">
+            <div className="border rounded-[10px] pl-5 py-2 2xl:w-[17.6rem] w-[50%] flex flex-col items-start 2xl:gap-.5 cursor-pointer">
               <p className="text-sm">From</p>
               <p className="text-xl font-bold pb-1">
                 {tripDetails.from.location}
@@ -85,7 +85,7 @@ const ChooseTrip = () => {
               <p className="text-xs">{tripDetails.from.airport}</p>
             </div>
             <div
-              className="2xl:px-2 2xl:py-1 2xl:w-10 2xl:h-10 flex justify-center items-center rounded-[50%] bg-white border absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+              className="px-1 py-1 2xl:w-10 2xl:h-10 flex justify-center items-center rounded-[50%] bg-white border absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
               onClick={handleArrowClick}
             >
               <GoArrowSwitch
@@ -93,7 +93,7 @@ const ChooseTrip = () => {
                 size={25}
               />
             </div>
-            <div className="border rounded-[10px] 2xl:pl-10 2xl:py-2 2xl:w-[17.6rem] flex flex-col items-start 2xl:gap-.5 cursor-pointer">
+            <div className="border rounded-[10px] pl-5 py-2 2xl:w-[17.6rem] w-[50%] flex flex-col items-start 2xl:gap-.5 cursor-pointer">
               <p className="text-sm">To</p>
               <p className="text-xl font-bold pb-1">
                 {tripDetails.to.location}
@@ -103,11 +103,11 @@ const ChooseTrip = () => {
           </div>
 
           <div className="border inline-flex rounded-[10px]">
-            <div className="2xl:w-[12rem] border-r-[.5px]"></div>
-            <div className="2xl:w-[12rem] "></div>
+            <div className="2xl:w-[12rem] w-1/2 h-[86px] border-r-[.5px]"></div>
+            <div className="2xl:w-[12rem] w-1/2 h-[86px]"></div>
           </div>
 
-          <div className="2xl:w-[17.6rem] text-[#6C757D] rounded-[10px] border 2xl:pl-5 2xl:py-2 flex flex-col items-start 2xl:gap-.5 cursor-pointer">
+          <div className="2xl:w-[17.6rem] w-full text-[#6C757D] rounded-[10px] border pl-5 py-2 flex flex-col items-start 2xl:gap-.5 cursor-pointer">
             <p className="text-sm">{travelerDetails.category}</p>
             <p className="text-xl font-bold pb-1">
               {travelerDetails.traveler_count} Traveler
@@ -116,7 +116,7 @@ const ChooseTrip = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-start gap-2">
+        <div className="flex flex-wrap justify-center items-start gap-2 py-2">
           <h1 className="font-semibold">Fare Type:</h1>
           <div className="flex gap-1 justify-center items-center">
             <div className="bg-[#FFF4F6] px-3 py-1 rounded-[5px] cursor-pointer">

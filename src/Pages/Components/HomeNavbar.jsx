@@ -24,13 +24,12 @@ const HomeNavbar = () => {
     }
   }, []);
 
-  const buttonClassNames = `bg-[#EB1933] text-white py-[11px] px-5 border border-[#EB1933] rounded-md hover:bg-white hover:text-[#EB1933] transition-all duration-300 ${animationClassRight}`;
-
+  const buttonClassNames = `bg-[#EB1933] text-white lg:py-[11px] py-[7px]  px-5 border border-[#EB1933] rounded-md hover:bg-white hover:text-[#EB1933] transition-all duration-300 ${animationClassRight}`;
   return (
-    <nav className="2xl:mx-[7.5rem] text-white flex justify-between items-center 2xl:py-2">
+    <nav className="mx-0 lg:mx-[7.5rem] text-white flex justify-between items-center py-2">
       <Link to="/" className={`${animationClassLeft}`}>
         <img
-          className="2xl:w-[200px] 2xl:h-[50px] object-cover bg-blend-darken"
+          className="w-[200px] h-[50px] object-cover bg-blend-darken"
           src={imageData || logo}
           alt="flight-expert"
         />
